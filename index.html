@@ -1,6 +1,13 @@
 <html>
 
 <head>
+    <script>
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+            }
+        });
+    </script>
     <title>导航</title>
     <script>
         document.addEventListener('contextmenu', function (e) {
